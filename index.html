@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Illustration Commission">
+<meta name="theme-color" content="#FFFDF8">
+<title>to9 Commission</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<main class="container">
+
+<section class="hero">
+
+<img
+class="poster"
+src="assets/hero.png"
+alt="Commission Poster"
+loading="eager">
+
+</section>
+
+<section class="status">
+
+<p class="eyebrow">
+Commission Status
+</p>
+
+<h1 id="status">
+<span class="status-dot"></span>
+OPEN
+</h1>
+
+</section>
+
+<section class="menu">
+
+<a class="menu-item" href="th.html">
+
+<div>
+
+<span class="code">
+TH
+</span>
+
+<h2>
+ภาษาไทย
+</h2>
+
+<p>
+รายละเอียดการจ้างงาน
+</p>
+
+</div>
+
+<span class="arrow">
+→
+</span>
+
+</a>
+
+<a class="menu-item" href="en.html">
+
+<div>
+
+<span class="code">
+EN
+</span>
+
+<h2>
+English
+</h2>
+
+<p>
+Commission Details
+</p>
+
+</div>
+
+<span class="arrow">
+→
+</span>
+
+</a>
+
+<a
+class="menu-item"
+href="https://x.com/to9__s?s=20"
+id="contactButton">
+
+<div>
+
+<span class="code">
+CONTACT
+</span>
+
+<h2>
+Contact Me
+</h2>
+
+<p>
+X
+</p>
+
+</div>
+
+<span class="arrow">
+↗
+</span>
+
+</a>
+
+</section>
+
+<section class="tagline">
+
+<p>
+
+I'LL MAKE IT AN ILLUSTRATION
+
+</p>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-line"></div>
+
+    <p class="footer-logo">
+
+        to9
+
+    </p>
+
+    <p class="footer-copy">
+
+        © 2026 All Rights Reserved
+
+    </p>
+
+</footer>
+
+</main>
+
+<script>
+
+const CONFIG = {
+
+    status: "OPEN",
+
+    contact: "#",
+
+    twitter: "#",
+
+    instagram: "#",
+
+    bluesky: "#"
+
+};
+
+const statusElement = document.getElementById("status");
+const contactButton = document.getElementById("contactButton");
+
+if (CONFIG.status === "OPEN") {
+
+    statusElement.innerHTML =
+    '<span class="status-dot"></span>OPEN';
+
+} else {
+
+    statusElement.innerHTML =
+    '<span class="status-dot closed"></span>CLOSED';
+
+}
+
+contactButton.href = CONFIG.contact;
+
+</script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
