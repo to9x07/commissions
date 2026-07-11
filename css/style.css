@@ -105,13 +105,10 @@ background-size:32px 32px;
 /* Container */
 
 .container{
-
-width:min(100%,var(--max-width));
-
-margin:auto;
-
-padding:0 28px 80px;
-
+    width:min(100%,var(--max-width));
+    margin:auto;
+    padding:0 28px 80px;
+    box-sizing:border-box;
 }
 
 /* Hero */
@@ -623,9 +620,9 @@ transform:none;
 
 width:min(88%,760px);
 
-padding-top:0px;
+padding:0 28px 110px;
 
-padding-bottom:110px;
+}
 
 }
 
@@ -1321,7 +1318,10 @@ fill:currentColor;
 
 .page-content{
     padding-top:48px;
+    padding-right:28px;
     padding-bottom:72px;
+    padding-left:28px;
+    box-sizing:border-box;
 }
 
 .page-back{
@@ -1569,6 +1569,14 @@ fill:currentColor;
 
         max-width:100%;
 
+    }
+
+}
+
+@media (max-width:768px){
+
+    .page-content{
+        padding:40px 32px 64px;
     }
 
 }
