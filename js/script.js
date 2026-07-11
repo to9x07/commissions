@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const CONFIG = {
         status: "OPEN", // OPEN | CLOSED
-        contact: "#"
+        contact: "https://x.com/to9__s"
     };
 
     const status = document.getElementById("status");
