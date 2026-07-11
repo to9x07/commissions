@@ -105,7 +105,7 @@ background-size:32px 32px;
 /* Container */
 
 .container{
-    width:min(100%,var(--max-width));
+    width:min(88%,var(--max-width));
     margin:auto;
     padding:0 28px 80px;
     box-sizing:border-box;
